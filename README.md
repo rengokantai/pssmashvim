@@ -172,6 +172,21 @@ vat //select all texts including boundary delimiter
 ```
 
 
+######select right boundary
+substitute :warn to :error
+```
+<%= flash[:warn] %>
+```
+```
+ci]:error
+```
+
+in visual mode
+```
+o
+```
+toggle cursor position
+
 
 
 
@@ -197,8 +212,8 @@ y?def       //copy from cursor to previous def
 substitute:
 [range]/old/new/ciInp         //I->case sensitive p->print matching lines n->show number of matchse
 ```
-:%s/a/b  //all lines
-:s/a/b  //currentline
+:%s/a/b  //all lines' first occurance
+:s/a/b  //currentline's first occurance
 :.,'a s/a/b   //search from cursor to mark a
 ```
 
@@ -229,6 +244,15 @@ print:
 :g/a/# //show line number
 :g/a/y  //yank
 :g/a/d //delete
+```
+
+
+
+```
+:.,+10g/foo/d     //delete matches from cursor through next 10 lines
+:.,'f+2g/foo/#    //show line numbers through 2 lines after mark 'f'
+:.,/bar/g/foo/d   //delete lines through next line matching bar
+
 ```
 normal mode
 ```
