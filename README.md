@@ -1,6 +1,6 @@
-#### pssmashvim
-#####part1
-######The basics
+# pssmashvim
+##part1
+###The basics
 enable syntax
 ```
 :syntax enable
@@ -23,7 +23,7 @@ cw //change word
 3cw //change 3 word
 ctrl R //redo
 ```
-######editing files
+###editing files
 ```
 :set hlsearch
 :set incsearch
@@ -61,7 +61,7 @@ V  visual mode,line mode
 c delete text(not limit to one char) and go to insert mode
 ```
 
-######config
+###config
 ```
 :set list
 :set nolist
@@ -81,7 +81,7 @@ get options
 :set filetype
 :colorscheme new
 ```
-######files
+###files
 set current dict as working dir
 ```
 :set autochdir
@@ -89,7 +89,7 @@ set current dict as working dir
 
 
 
-######window and buffer
+###window and buffer
 ```
 ctrl-w s  //split window horizontally      v: vertical
 ctrl w j //bottom window
@@ -117,8 +117,8 @@ bl last
 ba allbuffer
 bd delete (close file)
 ```
-#####part2
-######intro
+##part2
+###intro
 ```
 zt //near top
 zz //middle
@@ -158,8 +158,23 @@ get all marks
 ```
 :marks
 ```
+###Editing
+```
+I: move to the first non-blank character of line
+a: move one charater right
+A: move to end of line
+o: Open a new line below
+O: open a new line above
+```
 
-######search and replace
+
+
+
+
+
+
+
+###search and replace
 search
 ```
 /         //next
