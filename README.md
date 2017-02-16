@@ -166,7 +166,10 @@ A: move to end of line
 o: Open a new line below
 O: open a new line above
 ```
-
+```
+vit //select all texts not including boundary delimiter
+vat //select all texts including boundary delimiter
+```
 
 
 
