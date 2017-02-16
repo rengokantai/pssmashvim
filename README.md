@@ -258,7 +258,19 @@ normal mode
 ```
 g/a/normal newtext   /prepend newtext to every match of a
 ```
-magic vs very magic
+
+######very magic amd magic
+```
+\v  very magic
+```
+```
+\m   magic
+```
+######magic vs very magic.
+for text
+```
+syzygy
+```
 ```
 /\(.y\)\{3}
 ```
@@ -268,6 +280,9 @@ is same as
 ```
 by using \v  
 ctrl r pate content of register
+```
+/ctrl r/enter
+```
 ######advanced config
 ```
 nmap //normal
