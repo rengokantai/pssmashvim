@@ -296,7 +296,7 @@ create abbreviation
 iab ff firefox
 ab ff firefox
 ```
-######folding
+###folding
 ```
 :set foldermethod=indent/syntax/
 ```
@@ -309,8 +309,14 @@ za:toggle
 zM reduce all
 zR open all
 ```
+######spacing out
+```
+shiftwidth=2
+shiftabstop=2
+```
+`
 
-######documentation
+###documentation
 ```
 :h autocmd
 ```
